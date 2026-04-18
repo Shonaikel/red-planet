@@ -52,7 +52,7 @@ async function main() {
 
     console.log(JSON.stringify(results, null, 2));
   } catch (error) {
-    console.error("Algo salió mal:", error);
+    process.stderr.write(`Error: ${error}\n`);
   }
 }
 
